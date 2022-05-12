@@ -1,3 +1,5 @@
+// Database bilgi ekleme,bilgiyi alma, bilgi silme ve değiştirme
+import firebase from "./firebase";
 import { useState, useEffect } from "react";
 import {
   getDatabase,
@@ -51,6 +53,7 @@ export const useFetch = () => {
 // Bilgi silme
 export const DeleteUser = (id) => {
   const db = getDatabase();
+  const userRef = ref(db, "baglanti");
   remove(ref(db, "baglanti/" + id));
 
   Toastify("Kullanıcı bilgisi silindi");

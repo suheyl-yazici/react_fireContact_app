@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "fir-contact-app-42183",
   storageBucket: "fir-contact-app-42183.appspot.com",
   messagingSenderId: "645433802582",
-  appId: "1:645433802582:web:eace37630c1ddf656120f7"
+  appId: "1:645433802582:web:eace37630c1ddf656120f7",
 };
 
 // Initialize Firebase

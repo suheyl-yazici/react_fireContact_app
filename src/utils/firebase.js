@@ -5,13 +5,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBWTQogSEeKpVS1jVKAGtXq8HuwB7Xi9ZM",
-  authDomain: "fir-contact-app-42183.firebaseapp.com",
-  databaseURL: "https://fir-contact-app-42183-default-rtdb.firebaseio.com",
-  projectId: "fir-contact-app-42183",
-  storageBucket: "fir-contact-app-42183.appspot.com",
-  messagingSenderId: "645433802582",
-  appId: "1:645433802582:web:eace37630c1ddf656120f7",
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  databaseURL: process.env.REACT_APP_databaseURL,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
